@@ -1,0 +1,16 @@
+import java.util.*;
+class sumofdigits {
+    public static void main(String[]args) {
+        Scanner s = new Scanner(System.in);
+        long a = s.nextLong();
+        System.out.println(add(a));
+    }
+    public static long add(long a){
+        long sum=0;
+        if(a==0) {
+            return 0;
+        }
+        sum=a%10;
+        return sum+add(a/10);
+    }
+}
