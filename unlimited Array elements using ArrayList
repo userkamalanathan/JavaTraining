@@ -1,0 +1,18 @@
+import java.util.*;
+class vowel {
+    public static void main(String[]args){
+        Scanner s=new Scanner(System.in);
+        ArrayList<String> lis=new ArrayList<>();
+        String a=s.nextLine();
+        while(true){
+            if(a!="") {
+                lis.add(a);
+                a=s.nextLine();
+            }
+            else{
+                break;
+            }
+        }
+        System.out.print(lis);
+    }
+}
