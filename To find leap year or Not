@@ -1,0 +1,23 @@
+import java.util.*;
+public class leapyear {
+      public static void main(String[] args) {
+          Scanner s =new Scanner(System.in);
+          int a=s.nextInt();
+          if((a/4)*4 ==a){
+              if((a/100)*100 == a){
+                  if((a/400)*400 == a){
+                      System.out.println("Leap year");
+                  }
+                  else{
+                      System.out.println("Not Leap year");
+                  }
+              }
+              else{
+                  System.out.println("Leap year");
+              }
+          }
+          else{
+              System.out.println("Not Leap year");
+          }
+      }
+}
