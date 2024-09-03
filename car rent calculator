@@ -1,0 +1,18 @@
+import java.util.*;
+class car_rent {
+    public static void main (String[]args){
+        Scanner s=new Scanner(System.in);
+        int rent1=s.nextInt();
+        int no_hrs_for_rent1 =s.nextInt();
+        int rent2 =s.nextInt();
+        double time_inMin =s.nextDouble();
+        double tot=(time_inMin /60);
+        int total=(int)Math.ceil(tot);
+        int rem_hrs=total- no_hrs_for_rent1;
+        int first=1;
+        int second=1;
+        first= no_hrs_for_rent1 *rent1;
+        second=rem_hrs* rent2;
+        System.out.print( "Total charge is :"+(first+second));
+    }
+}
